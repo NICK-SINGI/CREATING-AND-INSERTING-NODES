@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JS HTML DOM</h2>
+<p>Add a new HTML Element.</p>
+
+<div id="div1">
+<p id="p1">I only drive Mercedenz benz.</p>
+<p id="p2">But i can still drive BMW.</p>
+</div>
+
+<script>
+const para = document.createElement("p");
+const node = document.createTextNode("Machines I Drive.");
+para.appendChild(node);
+
+const element = document.getElementById("div1");
+const child = document.getElementById("p1");
+element.insertBefore(para,child);
+</script>
+
+</body>
+</html>
